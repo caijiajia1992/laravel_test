@@ -44,3 +44,7 @@ Route::get('/test', function () {
 });
 //请求实例
 Route::get('/demo1', "DemoController@request");
+
+Route:get('/demo2', function () {
+    return "Hello Demo2";
+});
