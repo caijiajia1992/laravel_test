@@ -40,7 +40,7 @@ Route::get('/demo',['as'=>'mydemo', function () {
 Route::resource('/stu', "StuController");
 
 Route::get('/test', function () {
-    return "Hello Test!";
+    return "Hello Test!!!!!!";
 });
 //请求实例
 Route::get('/demo1', "DemoController@request");
