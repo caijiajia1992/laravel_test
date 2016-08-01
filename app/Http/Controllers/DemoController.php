@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use DB;
 use App\Http\Requests;
+use Illuminate\Http\Response;
 use App\Http\Controllers\Controller;
 
 class DemoController extends Controller
@@ -95,5 +96,21 @@ class DemoController extends Controller
         //echo $id;
         dd($request->all());
         return "Demo1";
+    }
+
+    public function response()
+    {
+//        $content = "Hello World!";
+//        $status  = 200;
+//        $value = "text/html";
+//        return (new Response($content, $status))
+//            ->header('Content-Type', $value);
+        return redirect('/stu');
+    }
+
+    public function demo3()
+    {
+        $list = DB::select("select * from stu where id=2");
+        dd($list);
     }
 }
