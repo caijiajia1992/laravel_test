@@ -15,12 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/*
+
 Route::get('/hello', function () {
     //abort(404);
     return 'hello Wolrd!';
 });
 
+/*
 Route::get('/stu', "StuController@index");
 
 //路由带参
